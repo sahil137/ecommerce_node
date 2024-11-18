@@ -1,11 +1,12 @@
 import mongoose from "mongoose";
-import { UserRole } from "../constants";
+import { UserRole } from "../constants/index.js";
 
 const userSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      required: true,
+      // required: true,
+      default: "Guest",
     },
 
     email: {
