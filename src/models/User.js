@@ -8,7 +8,10 @@ const userSchema = new mongoose.Schema(
       // required: true,
       default: "Guest",
     },
-
+    uid: {
+      type: String,
+      required: true,
+    },
     email: {
       type: String,
       required: true,
